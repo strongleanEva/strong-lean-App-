@@ -1,11 +1,10 @@
 {
   "name": "Strong & Lean",
   "short_name": "StrongLean",
-  "description": "Trainings- und Ernährungsplan Woche 1",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#f8f4ec",
-  "theme_color": "#6f7e5c",
+  "background_color": "#F7F1E8",
+  "theme_color": "#6F7E5C",
   "icons": [
     {
       "src": "icon-192.png",
