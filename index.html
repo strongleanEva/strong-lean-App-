@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6f7e5c">
+<link rel="manifest" href="./manifest.json">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="stylesheet" href="./styles.css">
+<title>Strong & Lean – Woche 1</title>
+</head>
+<body>
+<header class="app-header">
+  <div class="kicker">Strong & Lean</div>
+  <h1>Woche 1</h1>
+  <p class="sub">Kleine Schritte. Große Wirkung. · personalisiert für Eva</p>
+</header>
+<main class="container">
+<nav class="nav">
+  <a href="#" class="active" data-target="start">Start</a>
+  <a href="#" data-target="tage">Tage</a>
+  <a href="#" data-target="training">Training</a>
+  <a href="#" data-target="rezepte">Rezepte</a>
+  <a href="#" data-target="einkauf">Einkauf</a>
+  <a href="#" data-target="review">Review</a>
+</nav>
+
+<section id="start" class="visible">
+  <div class="card soft">
+    <h2>Kleine Schritte. Große Wirkung.</h2>
+    <p>Woche 1 legt die Basis: Technik, Routine, Protein und Dokumentation. Fortschritt entsteht durch Konstanz – nicht durch Perfektion.</p>
+    <div class="grid">
+      <div class="metric"><span>Training</span>3 Krafttrainings</div>
+      <div class="metric"><span>Protein</span>120–150 g täglich</div>
+      <div class="metric"><span>Wasser</span>2–3 Liter</div>
+      <div class="metric"><span>Schritte</span>6.000–7.000</div>
+    </div>
+    <h3>Fortschritt</h3>
+    <div class="progressbar"><span id="progressbar"></span></div>
+    <p class="small" id="progressText">0% erledigt</p>
+  </div>
+  <div class="two">
+    <div class="card">
+      <h2>Wochenziele</h2>
+      <label class="item"><input type="checkbox" data-id="goal_trainings">3 Krafttrainingseinheiten absolvieren</label>
+      <label class="item"><input type="checkbox" data-id="goal_protein">Täglich 120–150 g Protein erreichen</label>
+      <label class="item"><input type="checkbox" data-id="goal_water">2–3 Liter Wasser pro Tag trinken</label>
+      <label class="item"><input type="checkbox" data-id="goal_steps">Mindestens 6.000 Schritte täglich</label>
+      <label class="item"><input type="checkbox" data-id="goal_prep">Meal Prep vorbereiten</label>
+      <label class="item"><input type="checkbox" data-id="goal_log">Trainingsgewichte dokumentieren</label>
+    </div>
+    <div class="card">
+      <h2>Meal Prep</h2>
+      <label class="item"><input type="checkbox" data-id="prep_bolo">Familien-Linsen-Bolognese vorkochen</label>
+      <label class="item"><input type="checkbox" data-id="prep_couscous">Couscous vorkochen</label>
+      <label class="item"><input type="checkbox" data-id="prep_gemuese">Gemüse waschen und schneiden</label>
+      <label class="item"><input type="checkbox" data-id="prep_snacks">Snacks portionieren</label>
+      <label class="item"><input type="checkbox" data-id="prep_fridge">Kühlschrank organisieren</label>
+    </div>
+  </div>
+  <div class="card">
+    <h2>Wochenübersicht</h2>
+    <table>
+      <tr><th>Tag</th><th>Training</th><th>Mittag</th><th>Abendessen</th></tr>
+      <tr><td>Mo</td><td>Unterkörper</td><td>Linsen-Feta-Salat</td><td>Familien-Linsen-Bolognese</td></tr>
+      <tr><td>Di</td><td>Mobility</td><td>Linsen-Feta-Salat</td><td>Familien-Linsen-Bolognese</td></tr>
+      <tr><td>Mi</td><td>Spaziergang</td><td>Couscous-Feta-Salat</td><td>Abendessen außer Haus</td></tr>
+      <tr><td>Do</td><td>Oberkörper</td><td>Couscous-Feta-Salat</td><td>Mildes Kichererbsencurry</td></tr>
+      <tr><td>Fr</td><td>Mobility</td><td>Burrito Bowl</td><td>Mildes Kichererbsencurry</td></tr>
+      <tr><td>Sa</td><td>Ganzkörper</td><td>Tofu-Reispfanne Eva + Janis</td><td>Tofu-Reispfanne Familie</td></tr>
+      <tr><td>So</td><td>Meal Prep</td><td>Kartoffel-Brokkoli-Auflauf Eva + Janis</td><td>Auflauf Familie</td></tr>
+    </table>
+  </div>
+</section>
+<section id="tage"><div class="card"><h2>Tage</h2><p class="small">Mahlzeiten abhaken und Notizen eintragen.</p></div><div id="daysContainer"></div></section>
+<section id="training"><div class="card"><h2>Training & Journal</h2><p class="small">Gewichte, Wiederholungen und RPE dokumentieren.</p></div><div id="workoutContainer"></div></section>
+<section id="rezepte"><div class="card"><h2>Rezepte Woche 1</h2><p class="small">Portionsstandard: 1 Portion = Eva · 2 Portionen = Eva + Janis · 4 Portionen = Familie · 8 Portionen = Familie für zwei Tage.</p></div><div id="recipeContainer"></div></section>
+<section id="einkauf"><div class="card"><h2>Einkaufsliste Woche 1</h2><div id="shopContainer"></div></div></section>
+<section id="review"><div class="card"><h2>Wochenreview</h2><h3>Meine Erfolge diese Woche</h3><textarea rows="4" data-id="review_success"></textarea><h3>Das möchte ich nächste Woche verbessern</h3><textarea rows="4" data-id="review_improve"></textarea><h3>Bewertung</h3><div class="grid"><div class="pill">Energie: ☆ ☆ ☆ ☆ ☆</div><div class="pill">Training: ☆ ☆ ☆ ☆ ☆</div><div class="pill">Ernährung: ☆ ☆ ☆ ☆ ☆</div><div class="pill">Regeneration: ☆ ☆ ☆ ☆ ☆</div></div></div></section>
+</main>
+<div class="footer">Strong & Lean · Woche 1 · Offline nutzbar · lokal gespeichert</div>
+<script src="./app.js"></script>
+</body>
+</html>
