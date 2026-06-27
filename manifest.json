@@ -2,6 +2,7 @@
   "name": "Strong & Lean",
   "short_name": "StrongLean",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#F7F1E8",
   "theme_color": "#6F7E5C",
